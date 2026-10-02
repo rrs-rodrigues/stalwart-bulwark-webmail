@@ -138,7 +138,7 @@ resource "aws_instance" "mail" {
   instance_type          = var.instance_type
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.mail.id]
-
+  key_name               = var.public_key_path   
   root_block_device {
     volume_size = 30
     volume_type = "gp3"

@@ -14,3 +14,8 @@ variable "admin_ip" {
   description = "Seu IP para acesso administrativo (ex: 200.100.50.25/32)"
   type        = string
 }
+
+variable "public_key_path" {
+  description = "Caminho para a chave pública SSH"
+  type        = string
+}
